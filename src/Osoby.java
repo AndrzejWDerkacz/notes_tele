@@ -9,5 +9,5 @@
  * @author student
  */
 public class Osoby {
-    
+    Zajebiaszcza klasa
 }
