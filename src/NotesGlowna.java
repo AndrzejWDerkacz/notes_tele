@@ -1,4 +1,4 @@
-public class Notes_Glowna {
+public class NotesGlowna {
 
     public static void main(String[] args) {
         
