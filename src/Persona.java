@@ -167,35 +167,60 @@ public class Persona {
     public void setNumerTelefonu1(String numerTelefonu1) {
         this.numerTelefonu1 = numerTelefonu1;
     }
-
+      /** metoda pobierająca numer  telefonu 2
+      * 
+      * @return 
+      */
     public String getNumerTelefonu2() {
         return numerTelefonu2;
     }
-
+     /** 
+      *  metoda ustawiająca numer telefonu 1  
+      * @param numerTelefonu2 
+      */
     public void setNumerTelefonu2(String numerTelefonu2) {
         this.numerTelefonu2 = numerTelefonu2;
     }
-
+      /** metoda pobierająca numer  telefonu 3
+      * 
+      * @return 
+      */
     public String getNumerTelefonu3() {
         return numerTelefonu3;
     }
-
+    /** 
+      *  metoda ustawiająca numer telefonu 1  
+      * @param numerTelefonu3 
+      */
     public void setNumerTelefonu3(String numerTelefonu3) {
         this.numerTelefonu3 = numerTelefonu3;
     }
-
+      /** metoda pobierająca numer  telefonu 4
+      * 
+      * @return 
+      */
     public String getNumerTelefonu4() {
         return numerTelefonu4;
     }
-
+    /** 
+      *  metoda ustawiająca numer telefonu 4 
+      * @param numerTelefonu4 
+      */
     public void setNumerTelefonu4(String numerTelefonu4) {
         this.numerTelefonu4 = numerTelefonu4;
     }
 
+      /** metoda pobierająca numer  telefonu 5
+      * 
+      * @return 
+      */
     public String getNumerTelefonu5() {
         return numerTelefonu5;
     }
-
+      /** 
+      *  metoda ustawiająca numer telefonu 5  
+      * @param numerTelefonu5 
+      */
     public void setNumerTelefonu5(String numerTelefonu5) {
         this.numerTelefonu5 = numerTelefonu5;
     }
