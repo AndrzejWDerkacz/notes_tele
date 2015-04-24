@@ -28,7 +28,11 @@ public class NotesGlowna {
         int opcja=4;(1 dla dodawania osob, 2 dla dodawania numeru
         3 dla znajdowania, 4 dla wyswietlania listy z pozycjami i 5 do usuwania,
         0 do zamkniecia)
-        while(opcje!=0){}
+        while(opcje!=0){
+        if(opcja==1){}
+        if(opcja==2){}
+        itd.
+        }
        */
     }
     
