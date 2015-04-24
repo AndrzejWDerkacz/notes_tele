@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Andrzej
+ * @author Andrzej + Lukasz
  */
 public class Persona {
     /**
