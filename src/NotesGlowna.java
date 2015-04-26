@@ -33,7 +33,37 @@ public class NotesGlowna {
         if(opcja==2){}
         itd.
         }
+        edit
        */
+        
+        /*while(opcja!=0){
+            System.out.println("Podaj numer opcji: /n 1. Dodawanie nowej osoby;"
+                    + "/n 2. Dodanie numeru do już istniejącej osoby; /n"
+                    + "3. Wyszukiwanie danych osobowych; /n"
+                    + "4. Wyswietlanie wszystkich kontaktow; /n"
+                    + "5. Usuwanie konkretnej pozycji; /n"
+                    + "0. Koniec pracy programu.");
+            if(opcja--1){
+                System.out.println("Wybrałeś dodawanie nowej osoby");
+                lista.dodajPersone();
+            }
+            if(opcja--2){
+                System.out.println("Wybrałeś dodawanie numery do osoby");
+                lista.dodajNumer();
+            }
+            if(opcja--3){
+                System.out.println("Wybrałeś szukanie w bazie");
+                lista.znajdzPersone();
+            }
+            if(opcja--4){
+                System.out.println("Wybrałeś wyswietlanie wszystich kontaktow");
+                lista.wyswietl();
+            }
+            if(opcja--5){
+                System.out.println("Wybrałeś usuwanie konkretnej pozycji");
+                lista.usunPersone();
+            }
+        }*/
     }
     
 }
