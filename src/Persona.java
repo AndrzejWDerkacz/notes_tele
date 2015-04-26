@@ -153,8 +153,8 @@ public class Persona {
     public void setDataUrodzenia(String dataUrodzenia) {
         this.dataUrodzenia = dataUrodzenia;
     }
-     /** metoda pobierająca numer  telefonu 1
-      * 
+     /** 
+      * metoda pobierająca numer  telefonu 1
       * @return 
       */
     public String getNumerTelefonu1() {
@@ -167,8 +167,8 @@ public class Persona {
     public void setNumerTelefonu1(String numerTelefonu1) {
         this.numerTelefonu1 = numerTelefonu1;
     }
-      /** metoda pobierająca numer  telefonu 2
-      * 
+      /** 
+      * metoda pobierająca numer  telefonu 2
       * @return 
       */
     public String getNumerTelefonu2() {
@@ -181,8 +181,8 @@ public class Persona {
     public void setNumerTelefonu2(String numerTelefonu2) {
         this.numerTelefonu2 = numerTelefonu2;
     }
-      /** metoda pobierająca numer  telefonu 3
-      * 
+      /** 
+      * metoda pobierająca numer  telefonu 3
       * @return 
       */
     public String getNumerTelefonu3() {
@@ -195,8 +195,8 @@ public class Persona {
     public void setNumerTelefonu3(String numerTelefonu3) {
         this.numerTelefonu3 = numerTelefonu3;
     }
-      /** metoda pobierająca numer  telefonu 4
-      * 
+      /** 
+      * metoda pobierająca numer  telefonu 4
       * @return 
       */
     public String getNumerTelefonu4() {
@@ -210,8 +210,8 @@ public class Persona {
         this.numerTelefonu4 = numerTelefonu4;
     }
 
-      /** metoda pobierająca numer  telefonu 5
-      * 
+      /** 
+      * metoda pobierająca numer  telefonu 5
       * @return 
       */
     public String getNumerTelefonu5() {
