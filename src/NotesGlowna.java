@@ -1,10 +1,5 @@
-/*
-Do zrobienia:
-dodac
-import java.util.ArrayList;
-import java.util.List;
-*/
-
+import java.util.InputMismatchException;
+import java.util.Scanner;
 public class NotesGlowna {
 /*dodac metody pobierajace od uzytkownika dane osobowe, czy to przez SWINGa
     i JPaneOption czy poprzez wczytywanie z terminala
@@ -20,50 +15,53 @@ public class NotesGlowna {
     indexem pod ktorym sie znajduje, ale to juz przy implementacji, na razie
     wystarczy przygotowac puste metody
 */
-    public static void main(String[] args) {
-       /*
-       wstawić         List<Persona> lista=new ArrayList<>(); 
-        wywolac wczytywanie opcji do wybporu przez uzytkownika w petli,
-        najlepiej chyba while np. while()
-        int opcja=4;(1 dla dodawania osob, 2 dla dodawania numeru
-        3 dla znajdowania, 4 dla wyswietlania listy z pozycjami i 5 do usuwania,
-        0 do zamkniecia)
-        while(opcje!=0){
-        if(opcja==1){}
-        if(opcja==2){}
-        itd.
-        }
-        edit
-       */
-        
-        /*while(opcja!=0){
-            System.out.println("Podaj numer opcji: /n 1. Dodawanie nowej osoby;"
-                    + "/n 2. Dodanie numeru do już istniejącej osoby; /n"
-                    + "3. Wyszukiwanie danych osobowych; /n"
-                    + "4. Wyswietlanie wszystkich kontaktow; /n"
-                    + "5. Usuwanie konkretnej pozycji; /n"
-                    + "0. Koniec pracy programu.");
-            if(opcja--1){
-                System.out.println("Wybrałeś dodawanie nowej osoby");
-                lista.dodajPersone();
-            }
-            if(opcja--2){
-                System.out.println("Wybrałeś dodawanie numery do osoby");
-                lista.dodajNumer();
-            }
-            if(opcja--3){
-                System.out.println("Wybrałeś szukanie w bazie");
-                lista.znajdzPersone();
-            }
-            if(opcja--4){
-                System.out.println("Wybrałeś wyswietlanie wszystich kontaktow");
-                lista.wyswietl();
-            }
-            if(opcja--5){
-                System.out.println("Wybrałeś usuwanie konkretnej pozycji");
-                lista.usunPersone();
-            }
-        }*/
+   
+    /* Stałe - Po wpisaniu danej liczby mamy :    
+        1 - możliwość dodania osoby do listy 
+        2 - możliwość dodania numeru do listy
+        3 - możliwość wyszukania danej osoby z listy
+        4 - możliwość wyświetlenia całej listy 
+        5 - możliwość usunięcia interesującej nas osoby
+        0 - wpisanie zera powoduje zakończenie programu
+*/
+
+    
+    // Metoda pozwalająca na  dodanie osoby do listy
+    private static void DodajPersone(Scanner sc) throws InputMismatchException, ArrayIndexOutOfBoundsException {
+
+    } 
+    // Metoda pozwalająca na  dodanie numeru do listy
+    private static void DodajNumer(Scanner sc) throws InputMismatchException, ArrayIndexOutOfBoundsException {
+
+    }
+    // Metoda wyszukująca daną osobę
+    private static void WyszukajPersone() {
+
+    }
+    // Metoda wyświetlająca listę zapamiętanych osób i numerów
+    private static void WyświetlListę() {
+
+    }
+    // Metoda pozawalająca na usunięcie danej osoby
+    private static void UsuńPersone() {
+
     }
     
-}
+    
+     public static void main(String[] args) {
+
+        
+    // Metoda wyświetlająca możliwe opcje wyboru
+    private static void printOptions() {
+        System.out.println("--------------------");
+        System.out.println("Dostępne opcje: ");
+        System.out.println(DodajPersone + " - Dodaj Personę");
+        System.out.println(DodajNumer + " - Dodaj numer");
+        System.out.println(WyszukajPersone + " - Wyszukaj personę");
+        System.out.println(Wyświetl + " - Wyświetl listę");
+        System.out.println(UsuńPersone + " - Usuń personę");
+        System.out.println(koniec + " - Wyjście z programu");
+        System.out.println("Wybierz opcję: ");
+        }
+    }
+
