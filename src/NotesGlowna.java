@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+import java.util.List;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -19,7 +20,7 @@ public class NotesGlowna {
      * @throws InputMismatchException
      * @throws ArrayIndexOutOfBoundsException
      */
-    private static void DodajPersone(Scanner sc) throws InputMismatchException, ArrayIndexOutOfBoundsException {
+    private static void dodajPersone(Scanner sc) throws InputMismatchException, ArrayIndexOutOfBoundsException {
 
     }
 
@@ -72,6 +73,8 @@ public class NotesGlowna {
 */
     public static void main(String[] args) {
 
+        List<Persona> lista=new ArrayList<>();
+        
         int opcja=4;
         while(opcja!=0){
             System.out.println("Podaj numer opcji: /n 1. Dodawanie nowej osoby;"
