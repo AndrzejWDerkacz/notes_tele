@@ -58,6 +58,7 @@ public class NotesGlowna {
 
     /**
      * Metoda wyświetlająca możliwe opcje wyboru
+     * @param args
      */
     /*private static void printOptions() {
         System.out.println("--------------------");
@@ -107,5 +108,4 @@ public class NotesGlowna {
         }
         
     }
-
-|
+}
