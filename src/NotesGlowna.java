@@ -58,7 +58,7 @@ public class NotesGlowna {
     /**
      * Metoda wyświetlająca możliwe opcje wyboru
      */
-    private static void printOptions() {
+    /*private static void printOptions() {
         System.out.println("--------------------");
         System.out.println("Dostępne opcje: ");
         System.out.println(DodajPersone() + " - Dodaj Personę");
@@ -69,9 +69,40 @@ public class NotesGlowna {
         System.out.println(koniec + " - Wyjście z programu");
         System.out.println("Wybierz opcję: ");
     }
-
+*/
     public static void main(String[] args) {
 
+        int opcja=4;
+        while(opcja!=0){
+            System.out.println("Podaj numer opcji: /n 1. Dodawanie nowej osoby;"
+                    + "/n 2. Dodanie numeru do już istniejącej osoby; /n"
+                    + "3. Wyszukiwanie danych osobowych; /n"
+                    + "4. Wyswietlanie wszystkich kontaktow; /n"
+                    + "5. Usuwanie konkretnej pozycji; /n"
+                    + "0. Koniec pracy programu.");
+            //dodac wczytywanie opcji
+            if(opcja==1){
+                System.out.println("Wybrałeś dodawanie nowej osoby");
+                lista.dodajPersone();
+            }
+            if(opcja==2){
+                System.out.println("Wybrałeś dodawanie numery do osoby");
+                lista.dodajNumer();
+            }
+            if(opcja==3){
+                System.out.println("Wybrałeś szukanie w bazie");
+                lista.znajdzPersone();
+            }
+            if(opcja==4){
+                System.out.println("Wybrałeś wyswietlanie wszystich kontaktow");
+                lista.wyswietl();
+            }
+            if(opcja==5){
+                System.out.println("Wybrałeś usuwanie konkretnej pozycji");
+                lista.usunPersone();
+            }
+        }
+        
     }
 
 |
