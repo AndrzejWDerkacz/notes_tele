@@ -63,7 +63,7 @@ public class Persona {
      * @param numerTelefonu4 - pole String Numer4
      * @param numerTelefonu5 - pole String Numer5
      */
-    
+    //do zrobienia, zamienic 5 pol z numerami na tablice 5 elementowa
     public Persona(String imie, String nazwisko, String pseudonim, 
             String adresZamieszkania, String dataUrodzenia, 
             String numerTelefonu1, String numerTelefonu2, 
