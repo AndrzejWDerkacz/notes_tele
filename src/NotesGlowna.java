@@ -1,3 +1,6 @@
+
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.InputMismatchException;
@@ -58,54 +61,73 @@ public class NotesGlowna {
 
     /**
      * Metoda wyświetlająca możliwe opcje wyboru
+     *
+     * @param args
      */
     /*private static void printOptions() {
-        System.out.println("--------------------");
-        System.out.println("Dostępne opcje: ");
-        System.out.println(DodajPersone() + " - Dodaj Personę");
-        System.out.println(DodajNumer() + " - Dodaj numer");
-        System.out.println(WyszukajPersone() + " - Wyszukaj personę");
-        System.out.println(Wyświetl() + " - Wyświetl listę");
-        System.out.println(UsuńPersone() + " - Usuń personę");
-        System.out.println(koniec + " - Wyjście z programu");
-        System.out.println("Wybierz opcję: ");
-    }
-*/
-    public static void main(String[] args) {
+     System.out.println("--------------------");
+     System.out.println("Dostępne opcje: ");
+     System.out.println(DodajPersone() + " - Dodaj Personę");
+     System.out.println(DodajNumer() + " - Dodaj numer");
+     System.out.println(WyszukajPersone() + " - Wyszukaj personę");
+     System.out.println(Wyświetl() + " - Wyświetl listę");
+     System.out.println(UsuńPersone() + " - Usuń personę");
+     System.out.println(koniec + " - Wyjście z programu");
+     System.out.println("Wybierz opcję: ");
+     }
+     */
+    public static void main(String[] args) throws FileNotFoundException {
 
-        List<Persona> lista=new ArrayList<>();
-        
-        int opcja=4;
-        while(opcja!=0){
-            System.out.println("Podaj numer opcji: /n 1. Dodawanie nowej osoby;"
-                    + "/n 2. Dodanie numeru do już istniejącej osoby; /n"
-                    + "3. Wyszukiwanie danych osobowych; /n"
-                    + "4. Wyswietlanie wszystkich kontaktow; /n"
-                    + "5. Usuwanie konkretnej pozycji; /n"
+        List<Persona> lista = new ArrayList<>();
+        	
+        /* do obsługi plików
+        File plik = new File("notes_tele.txt");
+        Scanner odczyt = new Scanner(new File("notes_tele.txt"));
+        */
+        /**
+         * Inicjalizacja pola String potrzebnego do odbierania wyboru uzytkownika
+         */
+        String wartosc = "4"; //inicjalizacja pola wartoscia String = 4
+        Scanner wczytaj = new Scanner(System.in); //obiekt do odebrania danych od użytkownika
+        int opcja = Integer.parseInt(wartosc); //konwersja Stringa na liczbe calkowita
+        /**
+         * peta programu obslugujaca dzialanie wedle wyboru uzytkownika
+         */
+        while (opcja != 0) {
+            System.out.println("Podaj numer opcji: \n"
+                    + "1. Dodawanie nowej osoby;\n"
+                    + "2. Dodanie numeru do już istniejącej osoby; \n"
+                    + "3. Wyszukiwanie danych osobowych; \n"
+                    + "4. Wyswietlanie wszystkich kontaktow; \n"
+                    + "5. Usuwanie konkretnej pozycji; \n"
                     + "0. Koniec pracy programu.");
-            //dodac wczytywanie opcji
-            if(opcja==1){
-                System.out.println("Wybrałeś dodawanie nowej osoby");
-                lista.dodajPersone();
+            wartosc = wczytaj.nextLine();
+            System.out.println("Wybrałeś " + wartosc); //potwierdzenie wyboru usera
+            opcja = Integer.parseInt(wartosc);
+            if (opcja == 0) {
+                System.out.println("Zamknięcie programu.");
             }
-            if(opcja==2){
-                System.out.println("Wybrałeś dodawanie numery do osoby");
-                lista.dodajNumer();
+            if (opcja == 1) {
+                System.out.println("Inicjalizacja dodawania nowej osoby");
+                //lista.dodajPersone();
             }
-            if(opcja==3){
-                System.out.println("Wybrałeś szukanie w bazie");
-                lista.znajdzPersone();
+            if (opcja == 2) {
+                System.out.println("Inicjalizacja dodawania numeru do istniejacej osoby");
+                //lista.dodajNumer();
             }
-            if(opcja==4){
-                System.out.println("Wybrałeś wyswietlanie wszystich kontaktow");
-                lista.wyswietl();
+            if (opcja == 3) {
+                System.out.println("Inicjalizacja szukania pozycji w bazie");
+                //lista.znajdzPersone();
             }
-            if(opcja==5){
-                System.out.println("Wybrałeś usuwanie konkretnej pozycji");
-                lista.usunPersone();
+            if (opcja == 4) {
+                System.out.println("Inicjalizacja wyswietlania wszystich kontaktow");
+                //lista.wyswietl();
+            }
+            if (opcja == 5) {
+                System.out.println("Inicjalizacja usuwania konkretnej pozycji");
+                //lista.usunPersone();
             }
         }
-        
-    }
 
-|
+    }
+}
