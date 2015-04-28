@@ -79,6 +79,11 @@ public class Persona {
         this.numerTelefonu4 = numerTelefonu4;
         this.numerTelefonu5 = numerTelefonu5;
     }
+    /**
+     * pusty konstruktor
+     */
+    public Persona() {
+    }
 
     /**
      * metoda pobierająca imie 
