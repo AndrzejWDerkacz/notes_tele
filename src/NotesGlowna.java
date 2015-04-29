@@ -59,23 +59,6 @@ public class NotesGlowna {
 
     }
 
-    /**
-     * Metoda wyświetlająca możliwe opcje wyboru
-     *
-     * @param args
-     */
-    /*private static void printOptions() {
-     System.out.println("--------------------");
-     System.out.println("Dostępne opcje: ");
-     System.out.println(DodajPersone() + " - Dodaj Personę");
-     System.out.println(DodajNumer() + " - Dodaj numer");
-     System.out.println(WyszukajPersone() + " - Wyszukaj personę");
-     System.out.println(Wyświetl() + " - Wyświetl listę");
-     System.out.println(UsuńPersone() + " - Usuń personę");
-     System.out.println(koniec + " - Wyjście z programu");
-     System.out.println("Wybierz opcję: ");
-     }
-     */
     public static void main(String[] args) throws FileNotFoundException {
 
         List<Persona> lista = new ArrayList<>();
