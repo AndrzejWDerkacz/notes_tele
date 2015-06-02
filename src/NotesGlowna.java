@@ -62,14 +62,51 @@ public class NotesGlowna {
     public static void main(String[] args) throws FileNotFoundException {
 
         List<Persona> lista = new ArrayList<>();
-        	
+
         /* do obsługi plików
-        File plik = new File("notes_tele.txt");
-        Scanner odczyt = new Scanner(new File("notes_tele.txt"));
-        */
-        /**
-         * Inicjalizacja pola String potrzebnego do odbierania wyboru uzytkownika
+         File plik = new File("notes_tele.txt");
+         Scanner odczyt = new Scanner(new File("notes_tele.txt"));
          */
+        /**
+         * Inicjalizacja pola String potrzebnego do odbierania wyboru
+         * uzytkownika
+         */
+        File plik_notesu = new File("notes_tele.txt");;
+        boolean bool = false;
+
+        try {
+
+            // testuje czy plik istnieje
+            bool = plik_notesu.exists();
+
+            // wypisanie rezultatu
+            System.out.println("Sprawdzenie istnienia pliku bazy danych: "
+                    + bool);
+
+            if (bool == false) {
+                // create new files
+                //plik_notesu = new File("notes_tele.txt");
+
+                // create new file in the system
+                plik_notesu.createNewFile();
+                // testuje czy plik istnieje
+                bool = plik_notesu.exists();
+
+                // wypisanie rezultatu
+                System.out.println("Utworzenie pliku bazy danych: "
+                        + bool);
+            }
+
+            if (bool == true) {
+                System.out.println("Plik notes_tele.txt już isnieje, "
+                        + "Wybierz opcje");
+            }
+
+        } catch (Exception e) {
+            // if any error occurs
+            e.printStackTrace();
+        }
+
         String wartosc = "4"; //inicjalizacja pola wartoscia String = 4
         Scanner wczytaj = new Scanner(System.in); //obiekt do odebrania danych od użytkownika
         int opcja = Integer.parseInt(wartosc); //konwersja Stringa na liczbe calkowita
