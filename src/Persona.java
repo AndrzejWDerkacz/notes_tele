@@ -32,7 +32,7 @@ public class Persona {
     /**
      * pole tablicy przechowujacej numeryTelefonow
      */   
-    private String[] numeryTelefonu;
+    //private String[] numeryTelefonu;
     
     /**
      * konstruktor inicjalizujacy pola
@@ -43,7 +43,7 @@ public class Persona {
      * @param dataUrodzenia - pole przechowujace DataUrodzenia
      * @param numeryTelefonu - pole przechowuje numery teleronow;
      */
-   public Persona(String imie, String nazwisko, String pseudonim, String adresZamieszkania,
+   /*public Persona(String imie, String nazwisko, String pseudonim, String adresZamieszkania,
             String dataUrodzenia, String[] numeryTelefonu) {
         this.imie = imie;
         this.nazwisko = nazwisko;
@@ -51,7 +51,15 @@ public class Persona {
         this.adresZamieszkania = adresZamieszkania;
         this.dataUrodzenia = dataUrodzenia;
         this.numeryTelefonu = numeryTelefonu;
+    }*/
+    public Persona(String imie, String nazwisko, String pseudonim, String adresZamieszkania, String dataUrodzenia) {    
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.pseudonim = pseudonim;
+        this.adresZamieszkania = adresZamieszkania;
+        this.dataUrodzenia = dataUrodzenia;
     }
+
     /**
      * pusty konstruktor
      */
@@ -135,17 +143,17 @@ public class Persona {
  * metoda pobiera tablice z numerami
  * @return tablice numeryTelefonu
  */
-    public String[] getNumeryTelefonu() {
+    /*public String[] getNumeryTelefonu() {
         return numeryTelefonu;
     }
 /**
  * metoda pobiera numeryTelefonu
  * @param numeryTelefonu - ustawia przyjete numeryTelefonu
  */
-    public void setNumeryTelefonu(String[] numeryTelefonu) {
+    /*public void setNumeryTelefonu(String[] numeryTelefonu) {
         this.numeryTelefonu = numeryTelefonu;
     }
-
+*/
 
     /**
      * Metoda wyswietlajaca dane jednej osoby

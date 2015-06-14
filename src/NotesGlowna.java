@@ -61,7 +61,7 @@ public class NotesGlowna {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        List<Persona> lista = new ArrayList<>();
+        //List<Persona> lista = new ArrayList<>();
 
         /* do obsługi plików
          File plik = new File("notes_tele.txt");
