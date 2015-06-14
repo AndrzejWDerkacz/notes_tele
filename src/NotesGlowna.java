@@ -1,6 +1,9 @@
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.InputMismatchException;
@@ -48,8 +51,8 @@ public class NotesGlowna {
     /**
      * Metoda wyświetlająca listę zapamiętanych osób i numerów
      */
-    private static void WyświetlListę() {
-
+    private static void WyświetlListę(ListaKontaktow lista) {
+        lista.wyswietl();
     }
 
     /**
@@ -59,10 +62,10 @@ public class NotesGlowna {
 
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException, IOException {
 
         //List<Persona> lista = new ArrayList<>();
-
+        
         /* do obsługi plików
          File plik = new File("notes_tele.txt");
          Scanner odczyt = new Scanner(new File("notes_tele.txt"));
@@ -106,7 +109,11 @@ public class NotesGlowna {
             // if any error occurs
             e.printStackTrace();
         }
-
+        BufferedReader zrodlo=new BufferedReader(new FileReader(plik_notesu));
+        int liczbaKontaktow;
+        liczbaKontaktow = Integer.parseInt(zrodlo.readLine());
+        ListaKontaktow lista = new ListaKontaktow(liczbaKontaktow);
+        lista.wczytajZPliku("notes_tele.txt");
         String wartosc = "4"; //inicjalizacja pola wartoscia String = 4
         Scanner wczytaj = new Scanner(System.in); //obiekt do odebrania danych od użytkownika
         int opcja = Integer.parseInt(wartosc); //konwersja Stringa na liczbe calkowita
