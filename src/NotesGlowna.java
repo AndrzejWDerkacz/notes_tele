@@ -132,7 +132,8 @@ public class NotesGlowna {
             System.out.println("Wybrałeś " + wartosc); //potwierdzenie wyboru usera
             opcja = Integer.parseInt(wartosc);
             if (opcja == 0) {
-                System.out.println("Zamknięcie programu.");
+                System.out.println("Zamknięcie programu, nastapi zapisanie listy plików do pliku.");
+                lista.zapisDoPliku("notes_tele.txt");
             }
             if (opcja == 1) {
                 System.out.println("Inicjalizacja dodawania nowej osoby");
